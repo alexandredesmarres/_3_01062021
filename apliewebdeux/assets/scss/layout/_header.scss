@@ -1,0 +1,41 @@
+/* la page d'acceuille */
+.letitrelogoaccueil{
+  margin-top: 15px;
+  text-align: center;
+}
+
+
+
+
+/* les 4 restaurants */
+/* titre de l'aplication web + la fleche */
+  
+.entetederestaurant{
+    display: grid;
+    grid-template-columns: 0.25fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  
+  .fleche{
+    grid-column-start:1 ;
+    grid-column-end: 2;
+    grid-row-start:1 ;
+    grid-row-end:2;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  
+  .titleaplie{
+    grid-column-start:2 ;
+    grid-column-end:3 ;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-size: 30px;
+  }
+
+.letitrelogo {
+    margin-top: 20px;
+    margin-left:15px;
+}
+
+

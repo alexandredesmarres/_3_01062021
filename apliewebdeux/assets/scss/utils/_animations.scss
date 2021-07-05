@@ -1,0 +1,331 @@
+/* animation coeur */
+
+/* page d'accueil */
+
+.titledurestaurantpluscoeur .icontrois{
+    width: 30px;
+}
+
+.titledurestaurantpluscoeur .icontrois path{
+    fill:transparent;
+    stroke-width: 50;
+    stroke:  black;
+}
+
+.titledurestaurantpluscoeur .icontrois.hearttrois path{
+    stroke-dasharray: 1580;
+    stroke-dashoffset: 0;
+}
+
+.titledurestaurantpluscoeur .icontrois:hover path{
+	stroke: transparent;
+}
+
+
+.titledurestaurantpluscoeur .icontrois.hearttrois:hover path{
+    animation: animate-heart 1s linear forwards
+}
+
+@keyframes animate-heart{
+    0%{
+        stroke-dashoffset: 0;
+    }
+
+    100%{
+        stroke-dashoffset: 0;
+        fill:#DE7FFD;
+		
+    }
+}
+
+
+/* ______ SPIN LOADER ____ */
+
+.backgroundspinner{
+	height: 100%;
+   background: white;
+   margin: auto;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   z-index: 100;
+   -webkit-animation: disparition 3s linear ;
+    -o-animation: disparition 3s linear ;
+	opacity: 0;
+	pointer-events: none;
+}
+
+
+@keyframes disparition{
+
+
+	0%{
+		opacity: 1;
+
+	}
+
+	90%{
+		opacity:1 ;
+	}
+
+	100%{
+		opacity: 0;
+	}
+}
+
+
+.chargement{
+	/*Création du loader */ 
+	
+	border: 10px solid #F3F3F3;
+	width: 0px;
+	height: 0px;
+	border-radius: 50%; 
+	-webkit-animation: spin 3s linear infinite;
+	-o-animation: spin 3s linear infinite;
+	animation: spin 3s linear infinite;
+	animation-iteration-count: 1;
+	opacity: 0;
+	
+	
+	
+
+	/* Placement loader */
+
+	margin : auto; 
+	position : absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 100;
+}
+
+/* Animation du loader */ 
+
+@-webkit-keyframes spin {
+	0%{
+	
+		-webkit-transform: rotate(0deg) ;
+	}
+
+	100% {
+		-webkit-transform: rotate(360deg) ;
+			}
+}
+
+
+@keyframes spin {
+	0%{
+		transform: rotate(0deg) ;
+		width: 100px;
+		height: 100px;
+		opacity: 1;
+		border-top: 10px solid #AF7AC5 ;
+		border-bottom: 10px solid #AF7AC5 ;
+
+	}
+
+
+	100% {
+		transform: rotate(360deg) scale(3);
+		opacity: 1;
+
+	}
+}
+
+
+
+
+/* page des restaurant */
+
+
+.nomdurestau .iconquatre{
+    width: 30px;
+}
+
+.nomdurestau .iconquatre path{
+    fill:transparent;
+    stroke-width: 50;
+    stroke:  black;
+}
+
+.nomdurestau .iconquatre:hover path{
+	stroke: transparent;
+}
+
+
+.nomdurestau .iconquatre.heartquatre path{
+    stroke-dasharray: 1580;
+    stroke-dashoffset: 0;
+}
+
+
+.nomdurestau .iconquatre.heartquatre:hover path{
+    animation: animate-heartdeux 1s linear forwards;
+	
+}
+
+@keyframes animate-heartdeux{
+    0%{
+        stroke-dashoffset: 0;
+    }
+
+    100%{
+        stroke-dashoffset: 0;
+        fill: #DE7FFD;
+		
+    }
+}
+
+
+.fill {
+    color: black;
+    cursor: pointer;
+  }
+  .fill:hover {
+    animation: fill 0.3s ease-in-out;
+    display: inline-block;
+    opacity: 1;
+    background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+
+
+  @keyframes fill {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  
+/* slide vers la gauche */ 
+
+
+/*validation animation */
+
+
+@-webkit-keyframes rotate {
+	0% {
+	  -webkit-transform: rotate(0);
+			  transform: rotate(0);
+	}
+	100% {
+	  -webkit-transform: rotate(360deg);
+			  transform: rotate(360deg);
+	}
+  }
+  
+  @keyframes rotate {
+	0% {
+	  -webkit-transform: rotate(0);
+			  transform: rotate(0);
+	}
+	100% {
+	  -webkit-transform: rotate(360deg);
+			  transform: rotate(360deg);
+	}
+  }
+  
+  
+  @keyframes slide-left {
+	0% {
+	  -webkit-transform: scaleX(0);
+			  transform: scaleX(0);
+	}
+	100% {
+	  -webkit-transform: scaleX(-50px);
+			  
+	}
+  }
+  
+  @-webkit-keyframes opacity {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+  
+  @keyframes opacity {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+  
+  .appears-with-opacity {
+	-webkit-animation: opacity 1s both;
+			animation: opacity 1s both;
+  }
+
+
+/* apparation des dishs */
+
+#case-1{
+	animation: apparition 0.5s ease-out;
+	}
+	
+	#case-2{
+	animation: apparition 1s ease-out;
+	}
+	
+	#case-3{
+	animation: apparition 1.5s ease-out;
+	}
+
+	#case-10{
+		animation: apparition 1.7s ease-out;
+	}
+	
+	#case-4{
+	animation: apparition 2s ease-out;
+	}
+	
+	#case-5{
+	animation: apparition 2.5s ease-out;
+	}
+	
+	#case-6{
+	animation: apparition 3s ease-out;
+	}
+	
+	#case-7{
+	animation: apparition 3.5s ease-out;
+	}
+	
+	#case-8{
+	animation: apparition 4s ease-out;
+	}
+	
+	#case-9{
+	animation: apparition 4.5s ease-out;
+	}
+	
+	@keyframes apparition {
+	from {
+	  opacity: 0;
+	  transform: translateY(-100px);
+	}
+	
+	to {
+	  opacity: 1;
+	  transform: translateY(0px);
+	}
+	}
+	
+

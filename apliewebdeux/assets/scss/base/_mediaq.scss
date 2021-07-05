@@ -1,0 +1,199 @@
+@media screen and (max-width: 2000px){
+
+.fonction{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr ;
+    grid-template-rows: 0.5fr 1fr;
+}
+
+.fonctiontitle{
+    grid-column-start: 2;
+    grid-column-end:3 ;
+    grid-row-start:1 ;
+    grid-row-end: 2;
+    text-align: center;
+}
+
+.boutonun{
+    grid-column-start: 1;
+    grid-column-end:2 ;
+    grid-row-start: 2;
+    grid-row-end:3 ;
+}
+
+.boutondeux{
+    grid-column-start: 2;
+    grid-column-end:3 ;
+    grid-row-start: 2;
+    grid-row-end:3 ;
+}
+
+.boutontrois{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start:2 ;
+    grid-row-end: 3;
+}
+.boutonentier{
+    margin-left: 200px;
+}
+
+.new{
+    top: 8%;
+    left:88%;
+}
+}
+@media screen and (max-width: 1700px){
+    .boutonentier{
+        margin-left: 150px;
+    }
+}
+
+@media screen and (max-width: 1650px){
+    .new{
+        top:9%;
+        left:83%;
+    }
+
+  
+}
+
+@media screen and (max-width: 1400px){
+    .lesliensrestaurants{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 0.1fr ;
+        grid-row-gap: 25px;
+        padding: 10px;
+        
+      }
+      
+      .liensrestaurantstitle{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start:1 ;
+        grid-row-end: 2;
+        margin-left: 10px;
+      }
+      
+      .restaurantun{
+        grid-column-start:1 ;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        
+      }
+      
+      .restaurantdeux{
+        grid-column-start:1 ;
+        grid-column-end:2 ;
+        grid-row-start:3 ;
+        grid-row-end:4 ;
+      }
+      .restauranttrois{
+        grid-column-start:1 ;
+        grid-column-end:2 ;
+        grid-row-start: 4;
+        grid-row-end: 5;
+      }
+      
+      .restaurantquatre{
+        grid-column-start:1 ;
+        grid-column-end:2 ;
+        grid-row-start: 5;
+        grid-row-end: 6;
+      }
+    
+      .fonction{
+        display: grid;
+        grid-template-columns:1fr ;
+        grid-template-rows: 0.3fr 1fr 1fr 1fr;
+        margin-top: 30px;
+     
+       
+        
+    }
+    
+    .fonctiontitle{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end:2 ;
+        text-align: left;
+        margin-left: 20px;
+    }
+    
+    
+    
+    .boutonun{
+        grid-column-start: 1;
+        grid-column-end:2 ;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    
+    .boutondeux{
+        grid-column-start:1 ;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    
+    .boutontrois{
+        grid-column-start: 1;
+        grid-column-end:2 ;
+        grid-row-start: 4;
+        grid-row-end:5;
+    }
+    
+    .boutonentier{
+        margin-left: 40px;
+       
+    }
+    
+    
+}
+
+@media screen and (max-width: 1170px){
+    .new{
+        left:77%;
+    }
+}
+
+
+
+
+@media screen and (max-width: 600px){
+
+.new{
+    
+    font-size: 15px;
+    left:70%;
+    width: 90px;
+    height: 40px;
+    display: table;
+    vertical-align: center;
+    
+}
+
+
+
+.new p {
+        text-align: center;    
+      }
+
+}
+
+
+@media screen and (max-width : 400px){
+    .icontrois{
+        margin-right: 20px;
+    }
+
+    .lesrestaurants{
+        font-size: 16px;
+    }
+
+
+   
+}

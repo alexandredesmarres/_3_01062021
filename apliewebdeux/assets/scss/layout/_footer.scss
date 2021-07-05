@@ -1,0 +1,54 @@
+/* ____________ FOOTER _________ */ 
+
+.footerlink{
+	display: grid;
+	grid-template-columns: 1fr ;
+	grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr 0.5fr;
+	padding: 10px;
+	background-color: black;
+	font-size: 17px;
+	
+	
+}
+
+.logodusite{
+	grid-column:1 / 2;
+	grid-row:1 / 2;
+	font-family: $policeshrikhand;
+	margin-left: 10px;
+}
+
+.logoetlien1{
+	grid-column:1 / 2;
+	grid-row:2 / 3;
+	margin-left: 10px;
+}
+
+.logoetlien2{
+	grid-column:1 / 2;
+	grid-row: 3 / 4;
+	margin-left: 10px;
+}
+
+.lienmention{
+	grid-column:1 / 2;
+	grid-row:4 / 5;
+	margin-left: 10px;
+}
+
+.liencontact{
+	grid-column:1 / 2;
+	grid-row:5 / 6;
+	margin-left: 10px;
+}
+
+
+.footerlien, .fourchettecouteau, .poignedemains, .logodusite{
+	color: $colorliensfooter;
+}
+
+
+.footerlien a{
+	text-decoration: none;
+	color: white;
+}

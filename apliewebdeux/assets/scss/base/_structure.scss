@@ -1,0 +1,614 @@
+
+  
+  body{
+    margin : auto;
+    
+  }
+
+  /*page d'accueil */
+
+.pagedaccueil{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.10fr 0.3fr 0.5fr 2fr;
+
+}
+
+.searchcity{
+  grid-column-start:1;
+  grid-column-end:2 ;
+  grid-row-start:1 ;
+  grid-row-end: 2;
+
+}
+
+.reservation{
+  grid-column-start:1;
+  grid-column-end:2 ;
+  grid-row-start: 2;
+  grid-row-end:3 ;
+  height: 250px;
+
+}
+
+.fonction{
+  grid-column-start:1;
+  grid-column-end:2 ;
+  grid-row-start:3 ;
+  grid-row-end: 4;
+  margin-top: 15px;
+  
+
+}
+
+.lesliensrestaurants{
+  grid-column-start:1;
+  grid-column-end: 2;
+  grid-row-start:4 ;
+  grid-row-end: 5;
+  background-color: #F6F6F6;
+
+}
+/*search section */
+
+.searchcity{
+  margin-top: 30px;
+  background-color: #EBEBEB;
+  box-shadow: 0px -3px 10px grey;
+  
+}
+
+.searchcity{
+  display: flex;
+  justify-content: center;
+
+  
+}
+
+
+
+
+.searchcity i{
+  margin-top: 15px;
+}
+
+
+/*reservation section*/
+
+.reservation{
+  text-align: center;
+  background-color: #F6F6F6;
+}
+
+/* Fonction section */
+
+.fonction{
+  margin-bottom: 50px;
+}
+
+/* les liens des 4 restaurants */
+
+.lesliensrestaurants{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 0.2fr 1fr 1fr  0.1fr ;
+  grid-gap: 25px;
+  padding: 10px;
+  
+}
+
+.liensrestaurantstitle{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start:1 ;
+  grid-row-end: 2;
+  margin-left: 10px;
+}
+
+.restaurantun{
+  grid-column-start:1 ;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  
+}
+
+.restaurantdeux{
+  grid-column-start:2 ;
+  grid-column-end:3 ;
+  grid-row-start:2 ;
+  grid-row-end:3 ;
+}
+.restauranttrois{
+  grid-column-start:1 ;
+  grid-column-end:2 ;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.restaurantquatre{
+  grid-column-start:2 ;
+  grid-column-end:3 ;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.carte1 img{
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.carte2 img{
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.carte3 img{
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.carte4 img{
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.lesrestaurants{
+	border-radius: 20px;
+	background-color: white;
+	box-shadow: 10px 10px 10px $backgroundcolorshadow;
+	font-size: 18px;
+}
+
+.titledurestaurant, .paragraphecarterestaurant{
+  margin-left: 10px;
+}
+
+.paragraphecarterestaurant{
+  margin-top: -15px;
+}
+
+.lesliensrestaurants a {
+	text-decoration: none;
+	color: black;
+}
+
+/* Placement coeur */
+
+.titledurestaurantpluscoeur{
+  display: grid;
+  grid-template-columns: 1fr 0.20fr;
+  grid-template-rows: 1fr;
+}
+
+.titledurestaunrant{
+  grid-column-start:1 ;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end:2 ;
+}
+
+
+
+.hearttrois{
+  grid-column-start:2 ;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end:2 ;
+}
+
+
+
+.hearttrois{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+
+
+
+/*icone NEW */
+
+.new{
+  color: #2F8570;
+  background-color: #99E2D0;
+  border-radius: 5px;
+  position: absolute;
+  
+}
+
+
+
+
+
+
+
+/*Les 4 pages */
+
+/* la fleche back */
+
+.fa-arrow-left{
+  color: black;
+  
+}
+
+
+  /* la photo du restaurant " mangé " par le bloc en dessous */
+
+.placementphoto{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.25fr ;
+}
+.photodurestau{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end:3 ;
+    z-index: 1;
+
+}
+
+.nomdurestau{
+    grid-column-start: 1;
+    grid-column-end:2 ;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    z-index: 10;
+}
+
+.photodurestau img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+  
+  /* le bloc Nom du restau + le coeur aligné */
+  
+  .nomdurestau{
+    display: grid;
+    grid-template-columns: 1fr 0.25fr;
+    grid-template-rows: 1fr;
+    background-color: #F6F6F6;
+    border-radius: 30px 30px 0 0;
+  }
+
+  .lenom{
+      font-family: $policeshrikhand;
+      margin-left: 10px;
+  }
+  
+  .lenom{
+    grid-column-start:1 ;
+    grid-column-end:2 ;
+    grid-row-start:1 ;
+    grid-row-end:2;
+  }
+  
+  .heartquatre{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start:1 ;
+    grid-row-end:2;
+  }
+  
+  /* placement coeur */
+
+.heartquatre{
+    margin-left: 20px;
+    margin-top: 22px;
+}
+
+
+/* mise en place menu entier */
+.titledesentrees, .titledesplats, .titledesdesserts{
+  margin-left: 10px;
+}
+.menuentier{
+  background-color: #F6F6F6;
+}
+
+.line {
+  width: 45px;
+  border-bottom: 4px solid #99E2D0;
+  margin-left: 10px;
+}
+
+
+/*mise en place entré */
+
+
+
+.allstarter{
+  display : grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.50fr 1fr 1fr 1fr;
+  grid-row-gap: 20px; 
+  margin-bottom: 20px;
+}
+
+.titledesentrees{
+  grid-column-start:1 ;
+  grid-column-end:2 ;
+  grid-row-start: 1;
+  grid-row-end:2 ;
+}
+
+.line{
+  grid-column-start:1 ;
+  grid-column-end:2 ;
+  grid-row-start: 1;
+  grid-row-end:2 ;
+}
+
+#case-1{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#case-2{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end:4 ;
+}
+
+#case-3{
+  grid-column-start: 1;
+  grid-column-end:2 ;
+  grid-row-start: 4;
+  grid-row-end:5 ;
+}
+
+/*spécial la note enchanté 4 entrées */
+
+.allstarterspecial{
+  display : grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.50fr 1fr 1fr 1fr 1fr;
+  grid-row-gap: 20px; 
+}
+
+.titledesentrees{
+  grid-column-start:1 ;
+  grid-column-end:2 ;
+  grid-row-start: 1;
+  grid-row-end:2 ;
+  font-weight: normal;
+}
+
+#case-1{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#case-2{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end:4 ;
+}
+
+#case-3{
+  grid-column-start: 1;
+  grid-column-end:2 ;
+  grid-row-start: 4;
+  grid-row-end:5 ;
+}
+
+#case-10{
+  grid-column-start: 1;
+  grid-column-end:2 ;
+  grid-row-start: 5;
+  grid-row-end:6 ;
+}
+
+/*mise en place plat  */
+
+
+.alldish{
+  display : grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.50fr 1fr 1fr 1fr;
+  grid-row-gap: 20px; 
+  margin-bottom: 20px;
+}
+
+.titledesplats{
+  grid-column-start:1 ;
+  grid-column-end:2 ;
+  grid-row-start: 1;
+  grid-row-end:2 ;
+  font-weight: normal;
+}
+
+#case-4{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#case-5{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end:4 ;
+}
+
+#case-6{
+  grid-column-start: 1;
+  grid-column-end:2 ;
+  grid-row-start: 4;
+  grid-row-end:5 ;
+}
+
+
+
+/*mise en place dessert  */
+
+
+
+.allfinish{
+  display : grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.50fr 1fr 1fr 1fr;
+  grid-row-gap: 20px; 
+  
+  
+}
+
+.titledesdesserts{
+  grid-column-start:1 ;
+  grid-column-end:2 ;
+  grid-row-start: 1;
+  grid-row-end:2 ;
+  font-weight: normal;
+}
+
+#case-7{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#case-8{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end:4 ;
+}
+
+#case-9{
+  grid-column-start: 1;
+  grid-column-end:2 ;
+  grid-row-start: 4;
+  grid-row-end:5 ;
+}
+
+/* mise en place entré plat dessert */
+
+
+.menu__grid__case {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 97%;
+  height: 70px;
+  border-radius: 15px;
+  background-color: white;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
+  
+  margin-left: 5px;
+}
+
+.menu__grid__case:hover .validation__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: slide-left 0.5s ease;
+          animation: slide-left 0.5s ease;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+.menu__grid__case:hover .menu__case__price {
+  padding-right: 70px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.menu__grid__case .validation__box {
+  display: none;
+  position: absolute;
+  background: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  right: 0px;
+  padding: 0 13px;
+  height: 100%;
+}
+
+.menu__grid__case .validation__box i {
+  font-size: 30px;
+  color: white;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-animation: rotate 0.5s both;
+          animation: rotate 0.5s both;
+}
+
+.menu__case__dish {
+  margin-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.menu__case__dish p {
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.menu__case__dish-title {
+  font-weight: bold;
+}
+
+.menu__case__price {
+  padding-right: 20px;
+  font-weight: bold;
+  padding-left: 7px;
+  margin-top: 25px;
+}
+
+.dish-and-price {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+
+
+
+
+  
+  
+  
+  
